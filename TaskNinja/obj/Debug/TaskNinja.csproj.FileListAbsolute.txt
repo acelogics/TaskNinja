@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\TaskNinja\TaskNinja\bin\Debug\TaskNinja.exe.config
+C:\Users\user\source\repos\TaskNinja\TaskNinja\bin\Debug\TaskNinja.exe
+C:\Users\user\source\repos\TaskNinja\TaskNinja\bin\Debug\TaskNinja.pdb
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.MainForm.resources
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.Properties.Resources.resources
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.csproj.GenerateResource.cache
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.exe
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.pdb
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.RunTaskForm.resources
+C:\Users\user\source\repos\TaskNinja\TaskNinja\obj\Debug\TaskNinja.SplashScreen.resources
