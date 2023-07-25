@@ -32,16 +32,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 28.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Candara", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(248, 106);
+            this.label1.Location = new System.Drawing.Point(274, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 65);
+            this.label1.Size = new System.Drawing.Size(219, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "TaskNinja";
             // 
@@ -59,16 +61,42 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(232, 262);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(300, 21);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Check all Tasks running in the background";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(228, 294);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(304, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Run a task, Search a Running Task and Add a Task";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
             this.Name = "SplashScreen";
-            this.Text = "Task Ninja";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "t";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,5 +107,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
