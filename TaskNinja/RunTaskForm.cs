@@ -24,19 +24,20 @@ namespace TaskNinja
             if(!string.IsNullOrEmpty(textBox1.Text))
             {
                 //run new task
+                //MainForm form = new MainForm();
+
                 try
                 {
-                    MainForm form = new MainForm();
                     Process processs = new Process();
                     processs.StartInfo.FileName = textBox1.Text;
-                    processs.Start();                }
+                    processs.Start();  
+                }
                 catch(Exception ex)                 {
                     MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                  // Refresh the DataGridView to update the task list
-                 MainForm refresh = new MainForm();
-                refresh.GetAllProcesses();
+                //form.GetAllProcesses();
             }
         }
     }

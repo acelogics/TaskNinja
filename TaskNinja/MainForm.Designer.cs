@@ -38,17 +38,22 @@
             this.pid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.memUsage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Montserrat Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(212, 12);
+            this.textBox1.Location = new System.Drawing.Point(263, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 28);
+            this.textBox1.Size = new System.Drawing.Size(345, 28);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Search Process...";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
@@ -71,14 +76,14 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(13, 62);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(666, 47);
+            this.panel1.Size = new System.Drawing.Size(809, 47);
             this.panel1.TabIndex = 4;
             // 
             // runNewTask
             // 
             this.runNewTask.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.runNewTask.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.runNewTask.Location = new System.Drawing.Point(513, 3);
+            this.runNewTask.Location = new System.Drawing.Point(656, 3);
             this.runNewTask.Name = "runNewTask";
             this.runNewTask.Size = new System.Drawing.Size(150, 36);
             this.runNewTask.TabIndex = 4;
@@ -88,11 +93,14 @@
             // 
             // endTask
             // 
+            this.endTask.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.endTask.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.endTask.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.endTask.Location = new System.Drawing.Point(578, 565);
+            this.endTask.Location = new System.Drawing.Point(649, 3);
             this.endTask.Name = "endTask";
-            this.endTask.Size = new System.Drawing.Size(116, 36);
+            this.endTask.Size = new System.Drawing.Size(162, 36);
             this.endTask.TabIndex = 5;
             this.endTask.Text = "End Task";
             this.endTask.UseVisualStyleBackColor = false;
@@ -100,17 +108,20 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.processes,
             this.pid,
             this.status,
             this.memUsage});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 115);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 109);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 95;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(666, 439);
+            this.dataGridView1.Size = new System.Drawing.Size(808, 460);
             this.dataGridView1.TabIndex = 6;
             // 
             // processes
@@ -141,22 +152,33 @@
             this.memUsage.Name = "memUsage";
             this.memUsage.Width = 125;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.endTask);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 576);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(822, 49);
+            this.panel2.TabIndex = 7;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(706, 613);
+            this.ClientSize = new System.Drawing.Size(822, 625);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.endTask);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
+            this.MaximumSize = new System.Drawing.Size(840, 972);
             this.Name = "MainForm";
             this.Text = "TaskNinja";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,6 +195,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pid;
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewTextBoxColumn memUsage;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

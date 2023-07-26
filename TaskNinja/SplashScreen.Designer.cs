@@ -67,6 +67,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "SplashScreen";
             this.Text = "Task Ninja";
             this.ResumeLayout(false);
